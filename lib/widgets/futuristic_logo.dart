@@ -109,26 +109,29 @@ class _FuturisticLogoState extends State<FuturisticLogo>
                   ),
                 ),
               ),
-              // 3x3 grid of mini-arrows
-              Padding(
-                padding: EdgeInsets.all(size * 0.12),
-                child: Column(
-                  children: List.generate(3, (r) {
-                    return Expanded(
-                      child: Row(
-                        children: List.generate(3, (c) {
-                          return Expanded(
-                            child: _buildMiniCell(
-                              dir: _pattern[r][c],
-                              highlighted: hlCell == (r, c),
-                              pulse: pulse,
-                              cellSize: size * 0.25,
-                            ),
-                          );
-                        }),
-                      ),
-                    );
-                  }),
+              // 3x3 grid of mini-arrows — Positioned.fill so the Column gets
+              // bounded height inside the Stack.
+              Positioned.fill(
+                child: Padding(
+                  padding: EdgeInsets.all(size * 0.12),
+                  child: Column(
+                    children: List.generate(3, (r) {
+                      return Expanded(
+                        child: Row(
+                          children: List.generate(3, (c) {
+                            return Expanded(
+                              child: _buildMiniCell(
+                                dir: _pattern[r][c],
+                                highlighted: hlCell == (r, c),
+                                pulse: pulse,
+                                cellSize: size * 0.25,
+                              ),
+                            );
+                          }),
+                        ),
+                      );
+                    }),
+                  ),
                 ),
               ),
               // Corner accent dot
@@ -178,13 +181,15 @@ class _FuturisticLogoState extends State<FuturisticLogo>
     final color = highlighted
         ? AppColors.neonPink
         : AppColors.neonCyan.withValues(alpha: 0.85);
-    return CustomPaint(
-      painter: ArrowPainter(
-        direction: dir,
-        color: color,
-        glowColor: color,
-        glowIntensity: highlighted ? 0.9 + 0.1 * pulse : 0.3,
-        scale: 0.85,
+    return SizedBox.expand(
+      child: CustomPaint(
+        painter: ArrowPainter(
+          direction: dir,
+          color: color,
+          glowColor: color,
+          glowIntensity: highlighted ? 0.9 + 0.1 * pulse : 0.3,
+          scale: 0.85,
+        ),
       ),
     );
   }
