@@ -1,0 +1,64 @@
+{
+  "id": 32,
+  "difficulty": "insane",
+  "lives": 4,
+  "hints": 3,
+  "grid": [
+    [
+      "up",
+      null,
+      null,
+      null,
+      "up",
+      null
+    ],
+    [
+      "left",
+      "right",
+      "right",
+      null,
+      null,
+      "right"
+    ],
+    [
+      null,
+      null,
+      "up",
+      "up",
+      "right",
+      null
+    ],
+    [
+      null,
+      "right",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "left",
+      "right",
+      "right",
+      null,
+      null,
+      "right"
+    ],
+    [
+      null,
+      "left",
+      "left",
+      null,
+      "right",
+      "right"
+    ],
+    [
+      "left",
+      null,
+      null,
+      "up",
+      "up",
+      "right"
+    ]
+  ]
+}

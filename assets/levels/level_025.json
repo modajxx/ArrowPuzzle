@@ -1,0 +1,62 @@
+{
+  "id": 25,
+  "difficulty": "expert",
+  "lives": 3,
+  "hints": 3,
+  "grid": [
+    [
+      "up",
+      "right",
+      null,
+      null,
+      null,
+      "up",
+      null
+    ],
+    [
+      "up",
+      "up",
+      null,
+      null,
+      "left",
+      null,
+      "left"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      "right",
+      null
+    ],
+    [
+      null,
+      null,
+      "right",
+      "down",
+      "down",
+      null,
+      null
+    ],
+    [
+      "down",
+      "right",
+      null,
+      "down",
+      "right",
+      "right",
+      "down"
+    ],
+    [
+      null,
+      null,
+      null,
+      "left",
+      null,
+      "right",
+      null
+    ]
+  ]
+}

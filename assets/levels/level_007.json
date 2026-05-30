@@ -1,0 +1,12 @@
+{
+  "id": 7,
+  "difficulty": "normal",
+  "lives": 3,
+  "hints": 2,
+  "grid": [
+    ["right", "right", null,   null],
+    [null,    null,    null,   "down"],
+    [null,    null,    null,   "down"],
+    [null,    null,    "left", "left"]
+  ]
+}

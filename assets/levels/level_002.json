@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "difficulty": "easy",
+  "lives": 3,
+  "hints": 2,
+  "grid": [
+    ["up",   "up",   "up"],
+    ["up",   "up",   "up"],
+    ["down", "down", "down"]
+  ]
+}

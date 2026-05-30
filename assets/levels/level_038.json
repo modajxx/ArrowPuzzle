@@ -1,0 +1,78 @@
+{
+  "id": 38,
+  "difficulty": "insane",
+  "lives": 4,
+  "hints": 3,
+  "grid": [
+    [
+      "left",
+      null,
+      "left",
+      "left",
+      "up",
+      "right",
+      "right",
+      null
+    ],
+    [
+      "up",
+      null,
+      null,
+      null,
+      null,
+      "left",
+      "right",
+      "up"
+    ],
+    [
+      "left",
+      "left",
+      null,
+      null,
+      "right",
+      null,
+      null,
+      "right"
+    ],
+    [
+      "up",
+      null,
+      null,
+      null,
+      "down",
+      "down",
+      null,
+      "down"
+    ],
+    [
+      null,
+      "left",
+      null,
+      "left",
+      null,
+      "down",
+      "left",
+      "right"
+    ],
+    [
+      "left",
+      null,
+      null,
+      "left",
+      null,
+      null,
+      "right",
+      "right"
+    ],
+    [
+      "down",
+      "left",
+      "up",
+      "right",
+      null,
+      null,
+      "down",
+      null
+    ]
+  ]
+}
